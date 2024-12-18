@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
 
         b1=(Button) findViewById(R.id.add);
         b2=(Button) findViewById(R.id.sub);
-//        b3=(Button) findViewById(R.id.multiply);
+        b3=(Button) findViewById(R.id.multiply);
 //        b4=(Button) findViewById(R.id.division);
 
         b1.setOnClickListener(new View.OnClickListener() {
@@ -38,6 +38,13 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent ob3=new Intent(getApplicationContext(),SubActivity.class);
                 startActivity(ob3);
+            }
+        });
+        b3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent ob4=new Intent(getApplicationContext(),MulActivity.class);
+                startActivity(ob4);
             }
         });
 
