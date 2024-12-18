@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
 
 
         b1=(Button) findViewById(R.id.add);
-//        b2=(Button) findViewById(R.id.sub);
+        b2=(Button) findViewById(R.id.sub);
 //        b3=(Button) findViewById(R.id.multiply);
 //        b4=(Button) findViewById(R.id.division);
 
@@ -31,6 +31,13 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent ob2=new Intent(getApplicationContext(),addActivity.class);
                 startActivity(ob2);
+            }
+        });
+        b2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent ob3=new Intent(getApplicationContext(),SubActivity.class);
+                startActivity(ob3);
             }
         });
 
